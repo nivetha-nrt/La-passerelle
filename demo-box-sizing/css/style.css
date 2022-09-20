@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    /*box-sizing:content-box; /*content-box (valeur par defaut) / border-box (valeur qui intègre les padding et les border dans les dimensions de l'élément HTML*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+i{
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.test{
+    background-color:red;
+    height: 100px;
+    /* margin-bottom: 15px; */
+    width: 300px;
+}
+
+#padding{
+    padding:10px;
+}
+
+#padding-border {
+    border:5px solid #000000; /* *type de bordues : dashed / dotted / double / groove / hidden/ inset / none / outset / ridge / solid
+    padding:10px; */
+
+}/

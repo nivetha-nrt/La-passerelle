@@ -1,0 +1,136 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:50px;
+    text-align :center;
+}
+
+.bouton{
+    margin: 50px 0;
+}
+
+a{  
+    background: blueviolet;
+    border-radius:5px;
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    padding:20px;
+    text-decoration: none;
+
+    /*TRANSITION*/
+
+    /* ttransition-property:/* background, color, margin-left;  all;
+    transition-duration: 1s;  ms 
+    transition-timing-function:ease;
+    transition-delay:0s; */
+
+    transition:all 1s ease 0s; 
+}
+
+/*
+    transition-property        : Précise les propriétés CSS à transformer all / none / nom-propriété
+    transition-duration        : Précise la durée de la transition (en seconde ou milliseconde)
+    transition-timing-function : Précise la fonction de transition à utiliser
+        ease : Rapide sur le début puis décélère jusqu'à la fin.
+        linear : La vitesse est constante sur toute la durée de l'animation.
+        ease-in : Lent sur le début et accélère de plus en plus vers la fin.
+        ease-out : Rapide sur le début constant au milieu et décèlere sur la fin.
+        ease-in-out : Le départ et la fin sont lents, accélère au millieu.
+    transition-delay           : Indique la durée à attendre avant de débuter la transition (en seconde ou milliseconde)
+*/
+
+a:hover{
+    background:green;
+    color:white;
+    margin-left: 10px;
+    padding: 40px;
+}
+
+.logo{
+    transition:all 1s ease 0s; 
+   transform-origin: right bottom;
+}
+                                                                                        
+.logo:hover{
+    /* box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5); */
+    /*transform: skew(10deg);*/
+    transform:rotate(-90deg) scale(1.5);
+}
+
+/*
+    translate()  / une ou deux valeurs en px, em, % (x,y)
+    translateX() / une valeur en px, em, %
+    translateY() / une valeur en px, em, %
+    
+    scale() / un coeficient multiplicateur à virgule ou non / une ou deux valeurs en px, em, % (x,y)
+    scaleX() / une valeur en px, em, %
+	scaleY() / une valeur en px, em, %
+    
+    skew()   / un angle en degré  / une ou deux valeurs (x,y)
+    skewX() / une valeur degré
+	skewY() / une valeur degré
+	
+	rotate() un angle en degré / une valeur positive ou négative
+*/
+
+
+.baloon{
+    background:red;
+    height:50px;
+    width:50px;
+    margin:0 auto;
+    border-radius:50%;
+}
+
+.baloon:hover{
+    animation-name:rebondir;
+    animation-duration:1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    
+    /* animation:rebondir 1s linear 0s infinite alternate; */
+}
+
+@keyframes rebondir{
+    from{
+        transform: translateY(0px);
+        background: red;
+        height: 40px;
+    }
+
+    25% {
+        height: 50px;
+    }
+   
+    to{
+        transform: translateY(-20px);
+        background: green;
+    }
+}
+
+/*
+    animation-name: none (le nom de la nimation)
+    animation-duration: 3s (la durée de l'animation en seconde ou millisecondes)
+    animation-timing-function: ease (le type de fonction à appliquer)
+    animation-delay: 0s (le délai avant le déclenchement de l'animation en seconde ou millisecondes)
+    animation-iteration-count: 1 (indique le nombre de cycles utilisés pour répéter une animation avant que celle-ci s'arrête. Accepte entier, nombre à virgule et mot clé : infinite)
+    animation-direction: normal (indique si les cycles de l'animation doivent être joués dans le sens inverse et/ou de façon alternée.) Valeurs possibles : normal / reverse / alternate / alternate-reverse
+    animation-fill-mode: none (indique la façon dont une animation CSS doit appliquer les styles à sa cible avant et après son exécution). Valeurs possibles : none / forwards / backwards / both
+    animation-play-state: running (détermine si une animation est en cours d'exécution ou si elle est en pause). Valeurs possibles : running / pause;
+*/
+
+/*@keyframes rebondir{
+    0%{
+        
+    }
+    
+    100%{
+        
+    }
+}*/

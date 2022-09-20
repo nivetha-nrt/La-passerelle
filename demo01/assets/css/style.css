@@ -1,0 +1,26 @@
+/* CSS COMMUN */  
+
+body {
+    margin: 0;
+}
+
+/* CSS HEADER */
+
+header {
+    background-color: bisque;
+    padding: 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    margin-right: 20px;
+    border: 2px solid  #ffffff;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block ;
+    align-items: center;
+
+}
+
+

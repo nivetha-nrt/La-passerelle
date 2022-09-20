@@ -1,0 +1,52 @@
+@font-face {
+    src: url(../fonts/Blacksword.otf);
+    font-family: "blacksword";
+}
+
+@font-face {
+    src: url(../fonts/cardo/cardo-regular.woff);
+    font-family: "cardo";
+}
+
+@font-face {
+    src: url(../fonts/cardo/cardo-italic.woff);
+    font-family: "cardo";
+    font-style: italic;
+}
+
+@font-face {
+    src: url(../fonts/cardo/cardo-bold.woff);
+    font-family: "cardo";
+    font-weight: bold;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-size: 18px;
+}
+
+h1 {
+    font-family: "blacksword";
+}
+
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.cardo {
+    font-family: 'cardo';
+}
+
+.cardo strong, .cardo b {
+    font-weight: bold;
+}
+
+.cardo em, .cardo i {
+    font-style: italic;
+}

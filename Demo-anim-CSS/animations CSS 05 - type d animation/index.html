@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="assets/styles.css">
+        <title>Animation CSS - Exercice 1</title>
+        <style>
+            /* Ajoutez la règle @keyframes ici */
+
+            @keyframes rebondir {
+                0% {
+                    transform: translate(0px, 0px);
+                    
+                }
+
+                25% {
+                    transform: translate(00px, 0px);
+                }
+
+                50% { 
+                    transform: translate(100px, 100px);
+                }
+
+                75% {
+                    transform: translate(0px, 100px);
+                }
+            
+                100% {
+                    transform: translate(0px, 0px);
+                    
+                }
+            }
+            
+            /* Zone de travail */
+            #result {
+                display: flex;
+                justify-content: space-between;   
+                position: relative;
+                height: 500px;
+                border: 1px dashed #ccc;     
+                background-color: rgba(7, 23, 117, 0.2);         
+            }
+
+            /* Boite à animer */            
+            #animated_box{
+                width:100px;
+                height: 100px;
+                background-color: red;
+                /* obligatoires pour pouvoir bouger la div : */
+                position: absolute;
+                left:0px; top:0px;                
+                /* Ajoutez les options d'animation de la div ici */
+                animation-name:rebondir;
+                animation-duration:1s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction:alternate;
+            }
+
+                                                     
+        </style>
+    </head>
+    <body>
+        <section class="container">
+        <h1>Types d'animation</h1>
+        <p>Vous avez peut-être remarqué que par défaut les animations ne sont pas parfaitement linéaires.<p>
+        <p>Vous pouvez modifer cela en jouant avec la propriété <code class="pr">animation-timing-function</code>.</p>
+        <p>Les différentes valeurs possibles sont :</p>
+            <ul>
+                <li><code>linear</code></li>
+                <li><code>ease</code></li>
+                <li><code>ease-in</code></li>
+                <li><code>ease-out</code></li>
+                <li><code>ease-in-out</code></li>
+                <li>et quelques autres très spécifiques</li>
+            </ul>
+        <p>
+            Refaites une animation de mouvement de la box en modifiant cette propriété pour constater les différences dans l'animation.
+        </p>
+        <p>Pour pouvoir facilement faire rentrer plusieur div les unes à côté des autres, la taille de la div a été réduite à 100px x 100px.</p>
+        <div id="result">
+            <div id="animated_box"></div>
+            <div id="animated_box2"></div>
+            <div id="animated_box3"></div>
+            <div id="animated_box4"></div>
+            <div id="animated_box5"></div>
+        </div>         
+        </section>
+    </body>
+</html>

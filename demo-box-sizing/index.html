@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        
+        <title>Démo box-sizing</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>La propriété Box-sizing</h1>
+
+        <p>
+            <strong>Allez dans le fichier <i>style.css</i> et changer la valeur de la propriété CSS <ins>box-sizing</ins> avec <ins>border-box</ins> pour voir la différence.</strong>
+        </p>
+
+        <p>
+            En CSS, la largeur et la hauteur affectées à un élément HTML s'appliquent par défaut à la boîte de contenu (content box) de l'élément. Si l'élément possède une bordure (border) et/ou une marge intérieure (padding), celles-ci sont ajoutées à la largeur et/ou à la hauteur de la boîte affichée à l'écran. Ce qui pose problème.
+        </p>
+
+        <p>
+            La propriété <i>box-sizing</i>, associée à la valeur <i>border-box</i> permet de résoudre ce problème.
+        </p>
+        <p>
+            A noter que traditionnellement on associe la propriété  <i>box-sizing</i> au sélecteur CSS universel <i>*{ }</i> afin que la propriété soit appliquée à toutes les balises HTML sans exception.<br>
+            Pour en savoir plus sur la propriété <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing" title="Box-sizing sur Mozilla Developer Network"><i>box-sizing</i></a>
+        </p>
+        <div class="test">
+            sans padding ni bordure<br>
+            Larguer : 300px<br>
+            Hauteur : 100px
+        </div>
+
+        <div id="padding" class="test">
+            Avec padding de 10px<br>
+            Larguer : 320px (300 + 10 + 10)<br>
+            Hauteur : 120px (100 + 10 + 10)
+        </div>
+
+        <div id="padding-border" class="test">
+            Avec padding 10px et bordure de 5px<br>
+            Larguer : 330px (300 + 10 + 10 + 5 + 5)<br>
+            Hauteur : 130px (100 + 10 + 10 + 5 + 5)
+        </div>
+    </body>
+</html>
