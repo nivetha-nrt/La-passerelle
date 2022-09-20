@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Downloads/corrige_fusee_harysson"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Nivetha"
+	}
+}
