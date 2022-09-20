@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+main {
+    position: relative;
+}
+
+#palette-couleurs {
+    padding-left: 0;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+    height: 100%;
+    width: 2%;
+}
+
+#palette-couleurs li {
+    border-radius: 1rem;
+    list-style-type: none;
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+#palette-couleurs li.couleur-jaune {
+    background-color: yellow;
+}
+
+#palette-couleurs li.couleur-vert {
+    background-color: green;
+}
+
+#palette-couleurs li.couleur-bleu {
+    background-color: royalblue;
+}
+
+
+#palette-couleurs li.couleur-rouge {
+    background-color: red;
+}
+
+#palette-couleurs li.couleur-noir {
+    background-color: black;
+}
